@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Посвіт</title>
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+</head>
+<body>
+    <div class="wrapper">
+      <header>
+        <div class="header_logo">
+          <img src="images/logo.png" alt="logo" class="logo"/>
+          <h1>Посвіт</h1>
+        </div>
+          <img
+          src="images/logo.svg"
+          id="hamburger"
+          class="hamburger"
+          alt=""
+        />
+        <nav id="nav">
+          <ul>
+            <li><a class="nav_list" href="index.html">Головна</a></li>
+            <li><a  class="nav_list" href="about.html">Про табір</a></li>
+            <li><a  class="nav_list" href="questions.html">Запитання</a></li>
+            <li><a  class="nav_list" href="news.html">Новини</a></li>
+            <li><a  class="nav_list" href="photos.html">Фото</a></li>
+            <li><a  class="nav_list" href="prise.html">Ціни</a>
+            <li><a  class="nav_list" href="contacts.html">Контакти</a></li>
+          </ul>
+        </nav>
+      </header>
+      <div class="main">
+        <img src="images/Rectangle7.png" alt="hero" class="main_img">
+      </div>
+      <main>
+        <div class="col">
+          <div class="col1_img">
+            <img src="images/Rectangle8.png" alt="" class="a">
+          </div>
+          <div class="col1_img">
+            <img src="images/Rectangle9.png" alt="">
+          </div>
+          <div class="col1_img">
+            <img src="images/Rectangle10.png" alt="">
+          </div>
+        </div>
+        <div class="col">
+          <div class="col2_img">
+            <img src="images/Rectangle11.png" alt="">
+          </div>
+          <div class="col2_img">
+            <img src="images/Rectangle12.png" alt="">
+          </div>
+          <div class="col2_img">
+            <img src="images/Rectangle13.png" alt="">
+          </div>
+        </div>
+      </main>
+      <div class="info">
+          <h1>МХГО «Посвіт»</h1>
+          <p><b>МХГО «Посвіт»</b> – це молодіжна християнська громадська організація, яка об’єднує молодь
+            з бажанням змінювати цей світ на краще, самовдосконалюватися та ставати ближчими
+            до Бога.
+            Тут ти зможеш знайти нових друзів, відкрити щось нове для себе, отримати багато
+            приємних вражень і спогадів та просто приємно і корисно провести час.
+            На зустрічах спільноти, розмовах з отцями, семінаристами та іншими цікавими людьми,
+             проах, заходах для дітей та молоді в тебе є шанс набути досвіду спілкування людьми і Богом.
+             В наших серцях Він займає особливе місце, тож запрошуємо і тебе стати Його другом.
+            Чекаємо тебе!
+          <b>Щочетверга</b> о 19:00 у кабінеті <b>"Посвіту"(3 поверх);</b><br>
+            Кожної першої п'ятниці місяця о 18:00-молитва за спільноту у приміщенні храму.
+            Новини та інформація про інші заходи буде оновлюватись :)</p>
+      </div>
+      <footer>
+          <img src="images/logo.png" alt="" class="logo" style="align-self: center;">
+          <h1 class="logo" style="align-self: center;">Посвіт</h1>
+        <nav>
+          <ul>
+            <li><a class="nav_list" href="index.html">Головна</a></li>
+            <li><a  class="nav_list" href="about.html">Про табір</a></li>
+            <li><a  class="nav_list" href="questions.html">Запитання</a></li>
+            <li><a  class="nav_list" href="news.html">Новини</a></li>
+            <li><a  class="nav_list" href="photos.html">Фото</a></li>
+            <li><a  class="nav_list" href="prise.html">Ціни</a>
+            <li><a  class="nav_list" href="contacts.html">Контакти</a></li>
+          </ul>
+        </nav>
+
+        <ul class="social_nav" style="align-self: center;">
+          <li><i class="fab fa-facebook-f"></i></li>
+          <li><i class="fab fa-instagram"></i></li>
+        </ul>
+      </footer>
+
+    </div>
+    <script>
+            const humburger = document.getElementById("hamburger");
+      const nav = document.getElementById("nav");
+      const img = document.getElementById("img");
+      humburger.addEventListener("click", () => {
+        if (nav.style.display === "block") {
+          nav.style.display = "none";
+        } else {
+          nav.style.display = "block";
+        }
+      });
+      toggle();
+      window.onresize = function() {
+          toggle();
+      }
+
+      function toggle() {
+          if (window.innerWidth > 950) {
+              document.getElementById('nav').style.display = 'block';
+          } else {
+            document.getElementById('nav').style.display = 'none';
+          }
+      }
+    </script>
+</body>
+</html>
